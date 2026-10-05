@@ -1,0 +1,17 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment & IDE
+venv/
+env/
+.vscode/
+.idea/
+
+# Models & binaries
+*.pkl
+*.joblib
