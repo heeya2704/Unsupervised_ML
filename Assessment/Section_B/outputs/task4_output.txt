@@ -1,0 +1,34 @@
+﻿================================================================
+  CUSTOMER SEGMENTATION - K-MEANS + PCA
+================================================================
+  Customers : 180
+  Features  : monthly_orders, avg_order_value, avg_delivery_rating
+  Scaling   : StandardScaler (all three features)
+
+  Elbow Method - inertia by k
+    k=2  inertia=154.70
+    k=3  inertia=66.82
+    k=4  inertia=55.12
+    k=5  inertia=46.32
+    k=6  inertia=38.50
+    k=7  inertia=34.57
+    k=8  inertia=30.84
+    k=9  inertia=27.42
+
+  Optimal k from elbow: 3
+
+  Cluster sizes
+    Cluster 0: 60 customers
+    Cluster 1: 55 customers
+    Cluster 2: 65 customers
+
+  Cluster centroids (original feature scale)
+           monthly_orders  avg_order_value  avg_delivery_rating
+Cluster 0           21.28           621.99                 4.67
+Cluster 1            2.56           183.51                 3.48
+Cluster 2            9.12           306.31                 4.20
+
+  PCA variance explained: PC1=89.4%, PC2=8.0%
+  Saved elbow plot : C:\Users\heeya\OneDrive\Documents\TOPS\Machine Learning\Unsupervised_ML\Assessment\Section_B\outputs\task4_elbow_method.png
+  Saved PCA plot   : C:\Users\heeya\OneDrive\Documents\TOPS\Machine Learning\Unsupervised_ML\Assessment\Section_B\outputs\task4_pca_clusters.png
+================================================================

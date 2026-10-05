@@ -1,0 +1,21 @@
+﻿====================================================
+  DELIVERY TIME STATISTICAL PROFILER
+  Food Delivery Platform - Operations Report
+====================================================
+  Sample size (n)          :         19
+  Mean (minutes)           :      40.95
+  Median (minutes)         :      32.00
+  Mode (minutes)           :      30.00
+  Variance                 :     562.83
+  Standard deviation       :      23.72
+----------------------------------------------------
+  Skewness conclusion
+----------------------------------------------------
+  Mean vs median           : 40.95 vs 32.00
+  Distribution shape       : right-skewed (positively skewed)
+
+  Most deliveries sit in the 20-40 minute range, but a
+  few extreme delays (82, 91, 105 min) pull the mean
+  above the median. The app should display the median
+  as the typical delivery time, not the mean.
+====================================================

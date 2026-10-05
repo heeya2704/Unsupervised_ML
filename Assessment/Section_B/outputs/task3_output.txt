@@ -1,0 +1,35 @@
+﻿========================================================================
+  ORDER CANCELLATION CLASSIFIER
+========================================================================
+  Records              : 160
+  Cancelled share      : 21.9% (target ~20-25%)
+  Features             : order_value, delivery_distance_km,
+                         hour_of_day, restaurant_rating
+
+  Train size: 128  | Test size: 32
+
+------------------------------------------------------------------------
+  Classification report
+------------------------------------------------------------------------
+                   precision    recall  f1-score   support
+
+not cancelled (0)      0.893     1.000     0.943        25
+    cancelled (1)      1.000     0.571     0.727         7
+
+         accuracy                          0.906        32
+        macro avg      0.946     0.786     0.835        32
+     weighted avg      0.916     0.906     0.896        32
+
+------------------------------------------------------------------------
+Confusion matrix (rows = actual, columns = predicted)
+
+                 Predicted 0      Predicted 1
+  Actual 0 (kept)     TN=25         FP=0     
+  Actual 1 (cancel)   FN=3          TP=4     
+
+  Explicit counts
+    True Positives  (TP) : 4  - cancelled orders correctly flagged
+    True Negatives  (TN) : 25  - completed orders correctly identified
+    False Positives (FP) : 0  - completed orders wrongly flagged
+    False Negatives (FN) : 3  - cancelled orders missed
+========================================================================
